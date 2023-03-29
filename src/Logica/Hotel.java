@@ -1,9 +1,11 @@
 package Logica;
 
+import java.util.ArrayList;
+
 public class Hotel {
-	int number;
+	ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
 	public Hotel(){
-		this.number = 3;
+		
 	}
 
 }
