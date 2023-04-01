@@ -1,6 +1,6 @@
 package Logica;
 
-public abstract class Usuario {
+public abstract class Usuario{
 	protected String login;
 	protected String email;
 	protected String nombre;
