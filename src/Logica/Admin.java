@@ -3,11 +3,11 @@ package Logica;
 import java.util.HashMap;
 
 public class Admin {
-	Servicios servicio;
-	TarifasHabitacion tarifasHabitacion;
-	HashMap<Integer,Habitaciones> habitaciones = new HashMap<Integer,Habitaciones>();
+	protected Servicios servicio;
+	protected TarifasHabitacion tarifasHabitacion;
+	protected  HashMap<Integer,Habitacion> habitaciones = new HashMap<Integer,Habitacion>();
 	
-	public Admin(Servicios servicio, TarifasHabitacion tarifasHabitacion, HashMap<Integer, Habitaciones> habitaciones) {
+	public Admin(Servicios servicio, TarifasHabitacion tarifasHabitacion, HashMap<Integer, Habitacion> habitaciones) {
 		super();
 		this.servicio = servicio;
 		this.tarifasHabitacion = tarifasHabitacion;
@@ -31,4 +31,3 @@ public class Admin {
 	}
 
 }
-//TODO Falta crearlo

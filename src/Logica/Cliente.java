@@ -3,12 +3,12 @@ package Logica;
 import java.util.ArrayList;
 
 public class Cliente {
-	String nombre;
-	String documento;
-	String numTelefono;
-	int numAcompanantes;
-	ArrayList<String> serviciosUsados;
-	Reserva reserva;
+	protected String nombre;
+	protected String documento;
+	protected String numTelefono;
+	protected int numAcompanantes;
+	protected ArrayList<String> serviciosUsados;
+	protected Reserva reserva;
 	
 	public Cliente(String nombre, String documento, String numTelefono, int numAcompanantes,
 			ArrayList<String> serviciosUsados, Reserva reserva) {
@@ -34,4 +34,3 @@ public class Cliente {
 	}
 
 }
-//TODO Falta crearlo
