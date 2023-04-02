@@ -8,11 +8,10 @@ public class Habitacion {
 	protected boolean balcon;
 	protected boolean vista;
 	protected boolean cocina;
-	protected int numeroCamas;
-	protected String[] tipoCamas;
+	protected Cama cama;
 	
 	public Habitacion(int id, String tipoHabitacion, TarifasHabitacion tarifa, boolean balcon, boolean vista,
-			boolean cocina, int numeroCamas) {
+			boolean cocina, Cama cama) {
 		super();
 		this.id = id;
 		this.tipoHabitacion = tipoHabitacion;
@@ -20,8 +19,7 @@ public class Habitacion {
 		this.balcon = balcon;
 		this.vista = vista;
 		this.cocina = cocina;
-		this.numeroCamas = numeroCamas;
-		this.tipoCamas = new String[numeroCamas];
+		this.cama = cama;
 	}
 	
 	protected void crearHabitacion() {//TODO Falta crearlo
@@ -37,4 +35,3 @@ public class Habitacion {
 	}
 
 }
-//TODO Falta crearlo
