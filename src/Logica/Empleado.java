@@ -52,7 +52,7 @@ public class Empleado extends Usuario{
 		
 	}
     
-    protected Empleado crearEmpleado(String login, String email, String nombre, int acceso, int id) {//TODO Falta crearlo
+    protected Empleado crearEmpleado(String login, String email, String nombre, int acceso, int id) {
     	
     	Empleado empleadoNuevo = new Empleado(login, email, nombre, acceso);
     	empleadoNuevo.id = id;
