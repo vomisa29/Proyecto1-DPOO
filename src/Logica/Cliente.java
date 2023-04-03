@@ -21,16 +21,12 @@ public class Cliente {
 		this.reserva = reserva;
 	}
 	
-	protected void agregarAGrupo() {//TODO Falta crearlo
-		
+	protected void usarServicio(String servicio) {
+		this.serviciosUsados.add(servicio);
 	}
 	
-	protected void usarServicio() {//TODO Falta crearlo
-		
-	}
-	
-    protected void asignarHabitacion() {//TODO Falta crearlo
-		
+    protected void asignarHabitacion(Habitacion habitacion) {
+		this.reserva.habitacion = habitacion;
 	}
 
 }

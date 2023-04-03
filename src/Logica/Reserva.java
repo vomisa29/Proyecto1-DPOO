@@ -6,14 +6,16 @@ public class Reserva {
 	protected boolean grupo;
 	protected TarifasHabitacion tarifaHabitacion;
 	protected boolean reservaValida = true;
+	protected Habitacion habitacion;
 	
 	
-	public Reserva(String nombreCliente, int numPersonas, boolean grupo, TarifasHabitacion tarifaHabitacion) {
+	public Reserva(String nombreCliente, int numPersonas, boolean grupo, TarifasHabitacion tarifaHabitacion, Habitacion habitacion) {
 		
 		this.nombreCliente = nombreCliente;
 		this.numPersonas = numPersonas;
 		this.grupo = grupo;
 		this.tarifaHabitacion = tarifaHabitacion;
+		this.habitacion = habitacion;
 	}
 	
 	
