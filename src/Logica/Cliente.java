@@ -13,7 +13,7 @@ public class Cliente {
 
 	
 	public Cliente(String nombre, String documento, String numTelefono, int numAcompanantes,
-			ArrayList<String> serviciosUsados, Reservas reserva) {
+			ArrayList<String> serviciosUsados, Reserva reserva) {
 		super();
 		this.nombre = nombre;
 		this.documento = documento;

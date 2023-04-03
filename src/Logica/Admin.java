@@ -1,7 +1,7 @@
 package Logica;
 
 import java.util.HashMap;
-
+import java.util.Scanner;
 public class Admin extends Usuario{
 	public Admin(Servicios servicio, TarifasHabitacion tarifasHabitacion, HashMap<Integer, Habitacion> habitaciones) {
 		super();
@@ -21,7 +21,7 @@ public class Admin extends Usuario{
 	}
 	
 	protected void cargarMenu() {//TODO 
-		
+		System.out.println("El menú ha sido cargado");
 	}
 	
 	protected void actualizarTarifas() {//TODO 
@@ -42,8 +42,25 @@ public class Admin extends Usuario{
 	}
 
 	public void mostrarOpciones() {
-		// TODO Auto-generated method stub
-		
+		Scanner sn =new Scanner(System.in);
+		int opcion;
+		System.out.println("Bienvenido al menu de opciones, seleccione una:");
+        System.out.println("1. Cargar Menu");
+        System.out.println("2. Actualizar tarifas ");
+        System.out.println("3. Crear Habitación");
+        System.out.println("4. Cargar Habitaciones");
+		opcion=sn.nextInt();
+		switch(opcion){
+			case 1:
+				cargarMenu();
+			case 2:
+				actualizarTarifas();
+			case 3:
+				crearHabitacion();
+			case 4:
+				cargarHabitaciones();
+			}
+		}
 	}
 
 }
