@@ -3,7 +3,7 @@ package Logica;
 public class Cama {
 
 	protected int capacidadCama;
-	protected String tipoCama;// puede ser Estandar, Suite o Suite Doble
+	protected String tipoCama;// puede ser Sencilla, Doble
 	protected boolean soloNinos = false;
 	
 	public Cama(int capacidadCama, String tipoCama, boolean soloNinos) {
