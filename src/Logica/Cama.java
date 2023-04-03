@@ -1,7 +1,33 @@
 package Logica;
 
 public class Cama {
-	public int capacidadCama;
-	public String tipocama;
-	public boolean SoloNiños;
+
+	protected int capacidadCama;
+	protected String tipoCama;// puede ser Estandar, Suite o Suite Doble
+	protected boolean soloNinos = false;
+	
+	public Cama(int capacidadCama, String tipoCama, boolean soloNinos) {
+		this.capacidadCama = capacidadCama;
+		this.tipoCama = tipoCama;
+		this.soloNinos = soloNinos;
+	}
+	public int getCapacidadCama() {
+		return capacidadCama;
+	}
+	public void setCapacidadCama(int capacidadCama) {
+		this.capacidadCama = capacidadCama;
+	}
+	public String getTipoCama() {
+		return tipoCama;
+	}
+	public void setTipoCama(String tipoCama) {
+		this.tipoCama = tipoCama;
+	}
+	public boolean isSoloNinos() {
+		return soloNinos;
+	}
+	public void setSoloNinos(boolean soloNinos) {
+		this.soloNinos = soloNinos;
+	}
+
 }

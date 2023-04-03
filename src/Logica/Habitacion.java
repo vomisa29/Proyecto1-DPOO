@@ -1,5 +1,7 @@
 package Logica;
 
+import java.util.ArrayList;
+
 public class Habitacion {
 	
 	protected int id;
@@ -8,18 +10,18 @@ public class Habitacion {
 	protected boolean balcon;
 	protected boolean vista;
 	protected boolean cocina;
-	protected Cama cama;
+	protected ArrayList<Cama> camas;
 	
 	public Habitacion(int id, String tipoHabitacion, TarifasHabitacion tarifa, boolean balcon, boolean vista,
-			boolean cocina, Cama cama) {
-		super();
+			boolean cocina, ArrayList<Cama> camas) {
+
 		this.id = id;
 		this.tipoHabitacion = tipoHabitacion;
 		this.tarifa = tarifa;
 		this.balcon = balcon;
 		this.vista = vista;
 		this.cocina = cocina;
-		this.cama = cama;
+		this.camas = camas;
 	}
 	
 	protected void crearHabitacion() {//TODO Falta crearlo

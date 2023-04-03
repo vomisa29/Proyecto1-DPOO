@@ -2,6 +2,7 @@ package Logica;
 
 import java.util.ArrayList;
 
+
 public abstract class TarifasHabitacion{
 	protected String tipo; 
 	protected String fechaInicio;
@@ -9,7 +10,10 @@ public abstract class TarifasHabitacion{
 	protected float precio;
 	ArrayList<String> diasSemana = new ArrayList<String>();
 	
+
 	public void crearTarifa() {
+	}
+	public void Tarifas_Habitación() {
 
 	}
     public void EditarTarifa() {
