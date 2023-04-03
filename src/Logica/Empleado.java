@@ -1,5 +1,7 @@
 package Logica;
 
+import java.util.Scanner;
+
 public class Empleado extends Usuario{
 	
 	int id;
@@ -16,9 +18,27 @@ public class Empleado extends Usuario{
 
 	@Override
 	public void mostrarOpciones() {
-		// TODO Auto-generated method stub
+		Scanner sn =new Scanner(System.in);
+		int opcion;
+		System.out.println("Bienvenido al menu de opciones, seleccione una:");
+        System.out.println("1. Crear Cliente");
+        System.out.println("2. Consultar inventario");
+        System.out.println("3. Agregar factura");
+        System.out.println("4. Crear empleado");
+		opcion=sn.nextInt();
+		switch(opcion){
+			case 1:
+				crearCliente();
+			case 2:
+				consultarInventario();
+			case 3:
+				agregarFactura();
+			case 4:
+				crearEmpleado(login, email, nombre, acceso, id);
+			}
+		}
 		
-	}
+	
 	
 	protected void crearCliente() {// TODO Falta crearlo
 		

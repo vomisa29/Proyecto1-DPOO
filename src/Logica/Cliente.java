@@ -24,7 +24,10 @@ public class Cliente {
 	}
 	
 	protected void agregarAGrupo() {//TODO
-		
+	}
+	protected void usarServicio(String servicio) {
+		this.serviciosUsados.add(servicio);
+
 	}
 	
 	protected void usarServicio() {//TODO
@@ -32,7 +35,10 @@ public class Cliente {
 	}
 	
     protected void asignarHabitacion() {//TODO Falta crearlo
-		
+    }
+
+    protected void asignarHabitacion(Habitacion habitacion) {
+		this.reserva.habitacion = habitacion;
 	}
 
 }

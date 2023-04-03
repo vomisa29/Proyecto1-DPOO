@@ -15,7 +15,7 @@ public abstract class Usuario{
 	}
 	
     public abstract boolean accederSistema();{
-    	System.out.println("Bienvenido " + this.nombre );
+    	System.out.println("Bienvenido " + this.nombre + "!");
     }
     public abstract void mostrarOpciones();
     

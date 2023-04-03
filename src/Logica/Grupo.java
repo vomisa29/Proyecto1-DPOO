@@ -18,4 +18,15 @@ public class Grupo{
 	public void generarFacturaGrupo() {
 
 	}
+	protected void agregarAGrupo(Cliente cliente) {
+		this.listaClientes.add(cliente);
+	}
+
+	public Cliente getClientePrincipal() {
+		return clientePrincipal;
+	}
+
+	public void setClientePrincipal(Cliente clientePrincipal) {
+		this.clientePrincipal = clientePrincipal;
+	}
 }
