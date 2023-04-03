@@ -9,6 +9,16 @@ public class Servicios implements Inventario{
 	protected boolean guiaTuristica;
 	protected boolean restaurante;
 	
+	protected boolean consultarServicio(String servicio){
+		if (servicio.equals("Spa")) {
+			return this.spa;
+		}else if (servicio.equals("guiaTuristica")) {
+			return this.guiaTuristica;
+		}else if (servicio.equals("restaurante")) {
+			return this.restaurante;
+		}else return false;
+	}
+	
 	@Override
 	public void cargarInfoSpa() {
 		// TODO Auto-generated method stub
