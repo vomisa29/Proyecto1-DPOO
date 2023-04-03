@@ -8,10 +8,10 @@ public class Cliente {
 	String numTelefono;
 	int numAcompanantes;
 	ArrayList<String> serviciosUsados;
-	Reserva reserva;
+	Reservas reserva;
 	
 	public Cliente(String nombre, String documento, String numTelefono, int numAcompanantes,
-			ArrayList<String> serviciosUsados, Reserva reserva) {
+			ArrayList<String> serviciosUsados, Reservas reserva) {
 		super();
 		this.nombre = nombre;
 		this.documento = documento;
@@ -21,11 +21,11 @@ public class Cliente {
 		this.reserva = reserva;
 	}
 	
-	protected void agregarAGrupo() {//TODO Falta crearlo
+	protected void agregarAGrupo() {//TODO
 		
 	}
 	
-	protected void usarServicio() {//TODO Falta crearlo
+	protected void usarServicio() {//TODO
 		
 	}
 	
