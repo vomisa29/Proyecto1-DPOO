@@ -2,13 +2,16 @@ package Logica;
 
 import java.util.ArrayList;
 
-public class TarifasHabitacion{
-	protected String tipoHabitacion;
+
+public abstract class TarifasHabitacion{
+	protected String tipo; 
 	protected String fechaInicio;
 	protected String fechaFin;
 	protected float precio;
+	protected String tipoHabitacion;//puede ser estandar, suite, doble suite
 	ArrayList<String> diasSemana = new ArrayList<String>();
 	
+
 	public TarifasHabitacion(String tipoHabitacion, String fechaInicio, String fechaFin, float precio,
 			ArrayList<String> diasSemana) {
 		super();
@@ -59,6 +62,5 @@ public class TarifasHabitacion{
 		this.diasSemana = diasSemana;
 	}
 	
-	
-    
+
 }

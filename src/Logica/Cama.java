@@ -1,6 +1,7 @@
 package Logica;
 
 public class Cama {
+
 	protected int capacidadCama;
 	protected String tipoCama;// puede ser Sencilla, Doble
 	protected boolean soloNinos = false;
